@@ -31,7 +31,7 @@ public class Book extends DB_Element
      * 예제 메소드 - 이 주석을 사용자에 맞게 바꾸십시오
      *
      *
-     * @return    book객체를 문자열로 반환
+     * @return    book객체를 문자열로
      */
     public String toString()
     {
