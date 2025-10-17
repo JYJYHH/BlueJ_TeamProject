@@ -9,9 +9,9 @@ import DataBase.*;
  */
 public class LibraryManagementSystem
 {
-    private LibDB<Book> bookDB;            // 책 데이터베이스
-    private LibDB<User> userDB;            // 이용자 데이터베이스
-    private HashMap<String, User> loanDB;  // 대출 정보 (key=bookID, value=User)
+    LibDB<Book> bookDB;            
+    LibDB<User> userDB;            
+    HashMap<String, User> loanDB;  
 
     public LibraryManagementSystem() {
         bookDB = new LibDB<Book>();
