@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * LibDB 클래스의 설명을 작성하세요.
  *
- * @author (전채금)
+ * @author (전채금ㅇㅇ)
  * @version (버전 번호 또는 작성한 날짜)
  */
 public class LibDB<T extends DB_Element>
