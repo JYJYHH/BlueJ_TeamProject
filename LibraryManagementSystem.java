@@ -4,14 +4,14 @@ import DataBase.*;
 /**
  * LibraryManagementSystem 클래스의 설명을 작성하세요.
  *
- * @author (작성자 이름)
+ * @author (이상원)
  * @version (버전 번호 또는 작성한 날짜)
  */
 public class LibraryManagementSystem
 {
-    private LibDB<Book> bookDB;            // 책 데이터베이스
-    private LibDB<User> userDB;            // 이용자 데이터베이스
-    private HashMap<String, User> loanDB;  // 대출 정보 (key=bookID, value=User)
+    LibDB<Book> bookDB;            
+    LibDB<User> userDB;            
+    HashMap<String, User> loanDB;  
 
     public LibraryManagementSystem() {
         bookDB = new LibDB<Book>();
