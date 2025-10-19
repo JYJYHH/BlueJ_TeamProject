@@ -30,7 +30,7 @@ public class LibraryManagementSystem
     }
 
     public <T extends DB_Element> void printDB(LibDB<T> db) {
-        db.printAllElement();
+        db.printAllElements();
     }
 
     public void borrowBook(String userID, String bookID) {
