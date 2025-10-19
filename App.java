@@ -25,7 +25,6 @@ public class App
         library.printDB(uDB);
         System.out.println("----- 책 목록 출력 -----");
         library.printDB(bDB);
-        System.out.println("----- 대출 현황 -----");
         library.printLoanList();
     }
 }
