@@ -11,9 +11,9 @@ import java.lang.*;
  */
 public class LibraryManagementSystem
 {
-    private LibDB<Book> bookDB;
-    private LibDB<User> userDB;
-    private HashMap<User,Book> loanDB;
+    LibDB<Book> bookDB;
+    LibDB<User> userDB;
+    HashMap<User,Book> loanDB;
     public LibraryManagementSystem(){
         this.bookDB = new LibDB<>();
         this.loanDB = new HashMap<>();
