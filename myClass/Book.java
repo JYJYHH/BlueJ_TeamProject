@@ -2,25 +2,27 @@ package myClass;
 
 /**
  * Book 클래스의 설명을 작성하세요.
+ * 책 객체를 나타내는 Book 클래스
+ * 속성 5개 메소드 3개
  *
- * @author (작성자 이름)
- * @version (버전 번호 또는 작성한 날짜)
+ * @author (2020315044 허진영, 2022320009 이상원, 2024320060 전채금)
+ * @version (2025.10.17)
  */
 public class Book extends DB_Element
 {
-    // 인스턴스 변수 - 다음의 예제를 사용자에 맞게 변경하세요.
-    private String auther;
+    // 속성 5개 입력 전부 private 222p
+    private String author;
     private String bookID;
     private String publisher;
     private String title;
     private int year;
 
     /**
-     * Book 클래스의 객체 생성자
+     * Book 클래스의 객체 생성자 파라미터5개 (의미가 드러나도록) 197p
      */
-    public Book(String auther, String bookID, String publisher, String title, int year)
+    public Book(String author, String bookID, String publisher, String title, int year)
     {
-        this.auther = auther;
+        this.author = author;
         this.bookID = bookID;
         this.publisher = publisher;
         this.title = title;
@@ -28,25 +30,22 @@ public class Book extends DB_Element
     }
 
     /**
-     * 예제 메소드 - 이 주석을 사용자에 맞게 바꾸십시오
-     *
-     *
-     * @return    book객체를 문자열로
+     * 추상 클래스 DB_Element를 상속받아 getID()를 오버라이딩 299p
+     * 
+     */
+    public String getID()
+    {
+        return this.bookID;
+    }
+    
+    /**
+     * Object 클래스의 메소드 String toString() 오버라이딩 351p
+     * 현 객체에 대한 문자열 표현을 리턴
+     *  
      */
     public String toString()
     {
-        // 여기에 코드를 작성하세요.
-        return "(" + this.bookID + ") " + this.title +", " + this.auther + ", " + this.publisher + ", " + this.year;
-    }
-    /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
-     *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
-     */
-    public String getId()
-    {
-        return this.bookID;
+        return "(" + this.bookID + ") " + this.title +", " + this.author + ", " + this.publisher + ", " + this.year;
     }
 
 }
