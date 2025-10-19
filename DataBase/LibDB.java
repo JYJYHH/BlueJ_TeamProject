@@ -1,41 +1,30 @@
 package DataBase;
-import myClass.*;
 import java.util.*;
-
+import myClass.*;
 /**
- * LibDB 클래스의 설명을 작성하세요.
+ * LibDB 클래스: 제너릭(Generic) 타입을 사용하여 책 DB나 이용자 DB 등 다양한 데이터베이스를 관리하기 위한 클래스
+ * 
  *
- * @author (전채금)
+ * @author (2020315044 허진영, 2022320009 이상원, 2024320060 전채금)
  * @version (버전 번호 또는 작성한 날짜)
  */
 public class LibDB<T extends DB_Element>
 {
-    // 인스턴스 변수 - 다음의 예제를 사용자에 맞게 변경하세요.
     private ArrayList<T> db;
-
-    /**
-     * LibDB 클래스의 객체 생성자
-     */
-    public LibDB()
-    {
-        this.db = new ArrayList<T>();
+    
+    public LibDB(){
+        db = new ArrayList<>();
     }
 
-    /**
-     * 예제 메소드 - 이 주석을 사용자에 맞게 바꾸십시오
-     *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 더하기 y의 결과값을 반환
-     */
-    public void addElement(T element)
-    {
+    public void addElement(T element){
         db.add(element);
     }
+
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * findElement - 주어진 id 값을 이용해 데이터베이스에서 해당 요소를 찾는 메소드.
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param  id  학생id
+     * @return  해당 id를 가진 요소, 없으면 null 반환 
      */
     public T findElement(String id)
     {
@@ -50,15 +39,12 @@ public class LibDB<T extends DB_Element>
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
-     *
-     * @param  
-     * @return    
+     * printAllElements - 데이터베이스에 저장된 모든 요소를 출력하는 메소드.
+     * 
      */
-    public void printAllElement()
+    public void printAllElements()
     {
-        for (int i = 0; i < db.size(); i++) {
-            T element = db.get(i);
+        for(T element : db){
             System.out.println(element);
         }
     }
