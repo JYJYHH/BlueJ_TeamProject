@@ -31,7 +31,7 @@ public class LibDB<T extends DB_Element>
         Iterator<T> it = db.iterator();
         while (it.hasNext()) {
             T element = it.next();
-            if (element.getId().equals(id)) {
+            if (element.getID().equals(id)) {
                 return element;
             }
         }
