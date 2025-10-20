@@ -11,21 +11,21 @@ package myClass;
 public class Book extends DB_Element
 {
     // 속성 5개 입력 전부 private 222p
-    private String author;
     private String bookID;
-    private String publisher;
     private String title;
+    private String author;
+    private String publisher;
     private int year;
 
     /**
      * Book 클래스의 객체 생성자 파라미터5개 (의미가 드러나도록) 197p
      */
-    public Book(String author, String bookID, String publisher, String title, int year)
+    public Book(String bookID, String title, String author, String publisher, int year)
     {
-        this.author = author;
         this.bookID = bookID;
-        this.publisher = publisher;
         this.title = title;
+        this.author = author;
+        this.publisher = publisher;
         this.year = year;
     }
 
