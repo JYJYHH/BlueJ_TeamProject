@@ -2,12 +2,11 @@ import DataBase.*;
 import myClass.*;
 import java.util.*;
 import java.io.*;
-import java.lang.*;
 /**
- * LibraryManagementSystem 클래스의 설명을 작성하세요.
+ * LibraryManagementSystem: 책과 이용자, 대출 DB를 생성하고, App 클래스를 구현하기 위한 메소드를 정의하는 클래스.
  *
- * @author (2022320009 이상원)
- * @version ()
+ * @author (2020315044 허진영, 2022320009 이상원, 2024320060 전채금)
+ * @version (2025.10.17)
  */
 public class LibraryManagementSystem
 {
