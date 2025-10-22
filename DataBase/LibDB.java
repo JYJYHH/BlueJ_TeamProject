@@ -2,11 +2,11 @@ package DataBase;
 import java.util.*;
 import myClass.*;
 /**
- * LibDB 클래스: Generic한 클래스로, 책 DB나 이용자 DB 등 다양한 데이터베이스를 관리하기 위한 클래스
+ * LibDB 클래스: Generic한 클래스로(P.436), 책 DB나 이용자 DB 등 다양한 데이터베이스를 관리하기 위한 클래스
  * 
  *
  * @author (2020315044 허진영, 2022320009 이상원, 2024320060 전채금)
- * @version (버전 번호 또는 작성한 날짜)
+ * @version (2025.10.17)
  */
 public class LibDB<T extends DB_Element>
 {
