@@ -7,7 +7,7 @@ import java.io.*;
  *                          App 클래스를 구현하기 위한 메소드를 정의하는 클래스.
  *
  * @author (2020315044 허진영, 2022320009 이상원, 2024320060 전채금)
- * @version (2025.10.17)
+ * @version (2025.10.22)
  */
 public class LibraryManagementSystem
 {
