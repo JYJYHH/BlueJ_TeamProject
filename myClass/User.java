@@ -1,4 +1,4 @@
-package myClass;
+package myClass; //패키지 337p
 
 
 /**
@@ -12,21 +12,22 @@ package myClass;
 public class User extends DB_Element
 {
     // 속성 2개 입력 전부 private 222p
+    // Wrapper 클래스 360p
     private String name;
     private Integer stID;
 
     /**
      * User 클래스의 객체 생성자 파라미터2개 (의미가 드러나도록) 197p
      */
-    public User(int s, String n)
+    public User(int stID, String name)
     {
-        this.name = n;
-        this. stID = s;
+        this.name = name;
+        this. stID = stID;
     }
     
     /**
      * 추상 클래스 DB_Element를 상속받아 getID()를 오버라이딩 299p
-     * 
+     * 기본 타입 값을 문자열로 변환 362p
      */
     public String getID(){
         return Integer.toString(stID);

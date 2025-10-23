@@ -1,4 +1,4 @@
-package myClass;
+package myClass; //패키지 337p
 
 /**
  * Book 클래스의 설명을 작성하세요.
