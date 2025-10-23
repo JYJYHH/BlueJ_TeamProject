@@ -76,7 +76,8 @@ public class LibraryManagementSystem
     public LibDB<Book> setBookDB(String bookFile){
         this.bookDB = new LibDB<>();
         try(
-            Scanner bookScanner = new Scanner(new FileReader(bookFile))){
+            Scanner bookScanner = new Scanner(new FileReader(bookFile)))
+            {
                 while(bookScanner.hasNext()){
                     String bookLine = bookScanner.nextLine();
                     List<String> inputBook = new ArrayList<>();
