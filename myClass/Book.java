@@ -17,7 +17,7 @@ public class Book extends DB_Element
     private String publisher;
     private int year;
     /**
-     * Book 클래스의 객체 생성자 파라미터5개 (의미가 드러나도록) 197p
+     * Book 클래스의 객체 생성자 파라미터5개 (의미가 드러나도록) this 레퍼런스 190p,197p
      */
     public Book(String bookID, String title, String author, String publisher, int year)
     {

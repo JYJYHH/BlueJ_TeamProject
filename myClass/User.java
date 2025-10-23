@@ -14,7 +14,7 @@ public class User extends DB_Element
     private String name;
     private Integer stID;
     /**
-     * User 클래스의 객체 생성자 파라미터2개 (의미가 드러나도록) 197p
+     * User 클래스의 객체 생성자 파라미터2개 (의미가 드러나도록) this 레퍼런스 190p,197p
      */
     public User(int stID, String name)
     {
