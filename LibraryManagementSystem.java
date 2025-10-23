@@ -80,7 +80,7 @@ public class LibraryManagementSystem
             {
                 while(bookScanner.hasNext()){
                     String bookLine = bookScanner.nextLine();
-                    List<String> inputBook = new ArrayList<>();
+                    ArrayList<String> inputBook = new ArrayList<String>();
                     inputBook.add(bookLine);
                     Iterator<String> bookIterator = inputBook.iterator();
                     while(bookIterator.hasNext()){
