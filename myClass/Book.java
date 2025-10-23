@@ -16,7 +16,6 @@ public class Book extends DB_Element
     private String author;
     private String publisher;
     private int year;
-
     /**
      * Book 클래스의 객체 생성자 파라미터5개 (의미가 드러나도록) 197p
      */
@@ -28,7 +27,6 @@ public class Book extends DB_Element
         this.publisher = publisher;
         this.year = year;
     }
-
     /**
      * 추상 클래스 DB_Element를 상속받아 getID()를 오버라이딩 299p
      * 
@@ -37,7 +35,6 @@ public class Book extends DB_Element
     {
         return this.bookID;
     }
-    
     /**
      * Object 클래스의 메소드 String toString() 오버라이딩 351p
      * 현 객체에 대한 문자열 표현을 리턴
@@ -47,5 +44,4 @@ public class Book extends DB_Element
     {
         return "(" + this.bookID + ") " + this.title +", " + this.author + ", " + this.publisher + ", " + this.year;
     }
-
 }
