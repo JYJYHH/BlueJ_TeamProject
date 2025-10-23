@@ -8,7 +8,7 @@ import java.io.*;
  * @author (2020315044 허진영, 2022320009 이상원, 2024320060 전채금)
  * @version (2025.10.17)
  */
-public class Ap
+public class App
 {
     //메인메소드 59p
     public static void main(String[] args)
