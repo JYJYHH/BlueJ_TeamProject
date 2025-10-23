@@ -1,4 +1,4 @@
-package myClass;
+package myClass; //패키지 337p
 
 
 /**
