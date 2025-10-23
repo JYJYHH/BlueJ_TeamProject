@@ -55,9 +55,9 @@ public class LibraryManagementSystem
     public void printLoanList(){
         System.out.println("----- 대출 현황 -----");
         Set<User> keys = loanDB.keySet();
-        Iterator<User> it = keys.iterator();
-        while(it.hasNext()){
-            User loanUser = it.next();
+        Iterator<User> loanIterator = keys.iterator();
+        while(loanIterator.hasNext()){
+            User loanUser = loanIterator.next();
             Book loanBook = loanDB.get(loanUser);
             System.out.println(loanUser + " ===> " + loanBook);
         }
@@ -81,9 +81,9 @@ public class LibraryManagementSystem
                     String bookLine = bookScanner.nextLine();
                     List<String> inputBook = new ArrayList<>();
                     inputBook.add(bookLine);
-                    Iterator<String> it = inputBook.iterator();
-                    while(it.hasNext()){
-                        String currentLine = it.next();
+                    Iterator<String> bookIterator = inputBook.iterator();
+                    while(bookIterator.hasNext()){
+                        String currentLine = bookIterator.next();
                         StringTokenizer bookTokenizer = new StringTokenizer(currentLine,"/");
                         String bookID = bookTokenizer.nextToken();
                         String title = bookTokenizer.nextToken();
