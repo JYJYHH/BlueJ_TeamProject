@@ -13,7 +13,7 @@ public class LibDB<T extends DB_Element>
     private ArrayList<T> db;
     
     public LibDB(){
-        db = new ArrayList<>();
+        db = new ArrayList<>();//P.418 ArrayList생성
     }
 
     public void addElement(T element){
@@ -21,9 +21,9 @@ public class LibDB<T extends DB_Element>
     }
 
     /**
-     * findElement - 주어진 id 값을 이용해 데이터베이스에서 해당 요소를 찾는 메소드.
+     * findElement - 주어진 id 값을 이용해 데이터베이스에서 해당 요소를 찾는 메소드. P.422
      *
-     * @param  id  학생id
+     * @param  id  
      * @return  해당 id를 가진 요소, 없으면 null 반환 
      */
     public T findElement(String id)

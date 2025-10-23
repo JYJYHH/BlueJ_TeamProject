@@ -3,12 +3,12 @@ import myClass.*;
 import java.util.*;
 import java.io.*;
 /**
- * App 클래스: main메소드 내부에서 수행되는 작업(①~⑦)을 처리하도록 구현하는 클래스.
+ * App 클래스: main메소드 내부에서 수행되는 작업(①~⑦)을 처리하도록 구현하는 클래스. P.463,477
  *
  * @author (2020315044 허진영, 2022320009 이상원, 2024320060 전채금)
  * @version (2025.10.17)
  */
-public class App
+public class Ap
 {
     //메인메소드 59p
     public static void main(String[] args)
