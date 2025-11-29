@@ -16,6 +16,7 @@ public class LibraryManagementSystem
     LibDB<Book> bookDB;
     LibDB<User> userDB;
     HashMap<User,Book> loanDB;
+    
     /**
      * LibraryManagementSystem 클래스의 생성자 (생성자 선언 190p)
      * 책DB, 이용자DB, 대출DB를 초기화
@@ -25,6 +26,7 @@ public class LibraryManagementSystem
         this.loanDB = new HashMap<>();
         this.userDB = new LibDB<>();
     }
+    
     /**
      * borrowBook: 입력받은 이용자ID와 책ID를 사용하여 각각의 요소를 찾고,
      *             대출DB에 저장하는 메소드 (해시맵 저장 425p)
@@ -37,6 +39,7 @@ public class LibraryManagementSystem
         Book book = bookDB.findElement(bookID);
         loanDB.put(user,book);
     }
+    
     /**
      * printDB: 주어진 LibDB의 모든 요소를 출력하는 메소드.
      * 제네릭 타입 T는 DB_Element를 상속. (제네릭 메소드 440p)
@@ -46,6 +49,7 @@ public class LibraryManagementSystem
     public <T extends DB_Element> void printDB(LibDB<T> db){
         db.printAllElements();
     }
+    
     /**
      * printLoanList: 현재 대출 중인 이용자와 책 목록을 출력하는 메소드.
      * Key값을 통해 대출DB을 순회하며 Key와 Value값 출력. 
@@ -63,6 +67,7 @@ public class LibraryManagementSystem
         }
         System.out.println("--------------------");
     }
+    
     /**
      * setBookDB: 책DB를 초기화 한 후, 주어진 파일 경로에서 도서 정보를 읽어와 
      *            책DB를 생성하는 메소드.
@@ -80,7 +85,7 @@ public class LibraryManagementSystem
             {
                 while(bookScanner.hasNext()){
                     String bookLine = bookScanner.nextLine();
-                    List<String> inputBook = new ArrayList<>();
+                    ArrayList<String> inputBook = new ArrayList<String>();
                     inputBook.add(bookLine);
                     Iterator<String> bookIterator = inputBook.iterator();
                     while(bookIterator.hasNext()){
@@ -104,6 +109,7 @@ public class LibraryManagementSystem
         }
         return this.bookDB;
     }
+    
     /**
      * setUserDB: 이용자DB를 초기화 한 후, 주어진 파일 경로에서 도서 정보를 읽어와 
      *            이용자DB를 생성하는 메소드.

@@ -18,6 +18,7 @@ public class LibDB<T extends DB_Element>
     public LibDB(){
         db = new ArrayList<>();
     }
+    
     /**
      * addElement: 입력받은 요소를 제네릭한 DB에 저장하는 메소드
      *             ArrayList에 요소 삽입 418p 
@@ -27,6 +28,7 @@ public class LibDB<T extends DB_Element>
     public void addElement(T element){
         db.add(element);
     }
+    
     /**
      * findElement - 주어진 id 값을 이용해 데이터베이스에서 해당 요소를 찾는 메소드.
      *               (if문 94p), (equals메소드 356p), (Iterator 422p)
@@ -45,6 +47,7 @@ public class LibDB<T extends DB_Element>
         }
         return null;
     }
+    
     /**
      * printAllElements - 데이터베이스에 저장된 모든 요소를 출력하는 메소드.
      *                    for-each문 137p
